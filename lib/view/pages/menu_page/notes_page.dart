@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-import '../../../models/model.dart';
 
 class Notes extends StatefulWidget {
   // ProductModel model;

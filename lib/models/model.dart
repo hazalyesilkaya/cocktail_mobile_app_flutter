@@ -1,14 +1,32 @@
 // ignore_for_file: must_be_immutable, file_names,
+import 'dart:ui';
 
-class ProductModel {
+import 'package:hive/hive.dart';
+part 'model.g.dart';
+@HiveType(typeId: 0)
+class ProductModel{
+  @HiveField(0)
   String? name;
+  @HiveField(1)
   String? img;
+  @HiveField(2)
   String? description;
+  @HiveField(3)
   String? firstStep;
+  @HiveField(4)
   String? secondStep;
+  @HiveField(5)
   String? ingredient;
+  @HiveField(6)
+  int? id;
+  @HiveField(7)
   int index = 0;
+  @HiveField(8)
   bool isShow = false;
+  @HiveField(9)
+  String? colorKey;
+  @HiveField(10)
+  Color? color;
 
   ProductModel(
       {this.name,
@@ -16,7 +34,11 @@ class ProductModel {
       this.description,
       this.firstStep,
       this.secondStep,
-      this.ingredient});
+      this.ingredient,
+      this.id,
+        this.colorKey,
+        this.color,
+      });
 
   ProductModel.fromJson(Map<String, dynamic> json) {
     name = json['name'];
@@ -25,7 +47,9 @@ class ProductModel {
     firstStep = json['firstStep'];
     secondStep = json['secondStep'];
     ingredient = json['ingredient'];
+    id = json['id'];
   }
+
 
   Map<String, dynamic> toJson() {
     final Map<String, dynamic> data = <String, dynamic>{};
@@ -35,6 +59,8 @@ class ProductModel {
     data['firstStep'] = firstStep;
     data['secondStep'] = secondStep;
     data['ingredient'] = ingredient;
+    data['id'] = id;
     return data;
   }
+
 }

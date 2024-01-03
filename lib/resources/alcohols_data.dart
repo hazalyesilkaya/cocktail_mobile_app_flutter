@@ -1,7 +1,8 @@
 import '../models/model.dart';
 
 List<ProductModel> beerList = [
-  ProductModel(
+  ProductModel (
+   //  id:0,
       name: "Bira 1",
       img: "assets/images/antonio_rose.jpg",
       description: "Description1",
@@ -9,6 +10,7 @@ List<ProductModel> beerList = [
       secondStep: "bira1 step2 1",
       ingredient: "Ingredient1 Ingredient2"),
   ProductModel(
+   // id: 1,
       name: "Bira 2",
       img: "assets/images/isabella_mendes.jpg",
       description: "Description2",
@@ -16,6 +18,7 @@ List<ProductModel> beerList = [
       secondStep: "bira2 step2",
       ingredient: "Ingredient1 Ingredient2 Ingredient3"),
   ProductModel(
+   // id: 2,
       name: "Bira 3",
       img: "assets/images/martini_drink.jpg",
       description: "Description3",
@@ -23,6 +26,7 @@ List<ProductModel> beerList = [
       secondStep: "bira2 step2",
       ingredient: "Ingredient1 Ingredient2 Ingredient3"),
   ProductModel(
+   // id: 3,
       name: "Bira 4",
       img: "assets/images/valeria.jpg",
       description: "Description4",
@@ -30,13 +34,15 @@ List<ProductModel> beerList = [
       secondStep: "bira2 step2",
       ingredient: "Ingredient1 Ingredient2 Ingredient3 Ingredient4"),
   ProductModel(
+   // id: 4,
       name: "Bira 5",
-      img: "assets/images/osvaldo.jpg",
+      img: "assets/images/antonio_rose.jpg",
       description: "Description5",
       firstStep: "bira5 step1",
       secondStep: "bira5 step2",
       ingredient: "Ingredient1 Ingredient2 Ingredient3"),
   ProductModel(
+  //  id: 5,
       name: "Bira 6",
       img: "assets/images/antonio_rose.jpg",
       description: "Description6",
@@ -48,6 +54,7 @@ List<ProductModel> beerList = [
 
 List<ProductModel> liqueurList = [
   ProductModel(
+   // id: 0,
       name: "Likör 1",
       img: "assets/images/antonio_rose.jpg",
       description: "Description1",
@@ -55,6 +62,7 @@ List<ProductModel> liqueurList = [
       secondStep: "Likör1 step2",
       ingredient: "Ingredient1 Ingredient2 Ingredient3 Ingredient4"),
   ProductModel(
+   // id: 1,
       name: "Likör 2",
       img: "assets/images/isabella_mendes.jpg",
       description: "Description2",
@@ -62,6 +70,7 @@ List<ProductModel> liqueurList = [
       secondStep: "Likör2 step2",
       ingredient: "Ingredient1 Ingredient2 Ingredient3"),
   ProductModel(
+   // id: 2,
       name: "Likör 3",
       img: "assets/images/martini_drink.jpg",
       description: "Description3",
@@ -69,6 +78,7 @@ List<ProductModel> liqueurList = [
       secondStep: "Likör3 step2",
       ingredient: "Ingredient1 Ingredient2 Ingredient3 Ingredient4"),
   ProductModel(
+   // id: 3,
       name: "Likör 4",
       img: "assets/images/valeria.jpg",
       description: "Description4",
@@ -76,13 +86,15 @@ List<ProductModel> liqueurList = [
       secondStep: "Likör4 step2",
       ingredient: "Ingredient1 Ingredient2 Ingredient3 Ingredient4"),
   ProductModel(
+   // id: 4,
       name: "Likör 5",
-      img: "assets/images/osvaldo.jpg",
+      img: "assets/images/antonio_rose.jpg",
       description: "Description5",
       firstStep: "Likör 5 step1",
       secondStep: "Likör5 step2",
       ingredient: "Ingredient1 Ingredient2 Ingredient3"),
   ProductModel(
+   // id: 5,
       name: "Likör 6",
       img: "assets/images/antonio_rose.jpg",
       description: "Description6",
@@ -93,6 +105,7 @@ List<ProductModel> liqueurList = [
 
 List<ProductModel> tequilaList = [
   ProductModel(
+   // id: 0,
       name: "Tekila 1",
       img: "assets/images/antonio_rose.jpg",
       description: "Description1",
@@ -100,6 +113,7 @@ List<ProductModel> tequilaList = [
       secondStep: "Tekila1 step2",
       ingredient: "Ingredient1 Ingredient2 Ingredient3 Ingredient4"),
   ProductModel(
+   // id: 1,
       name: "Tekila 2",
       img: "assets/images/isabella_mendes.jpg",
       description: "Description2",
@@ -107,6 +121,7 @@ List<ProductModel> tequilaList = [
       secondStep: "Tekila2 step2",
       ingredient: "Ingredient1 Ingredient2 Ingredient3 Ingredient4"),
   ProductModel(
+   // id: 2,
       name: "Tekila 3",
       img: "assets/images/martini_drink.jpg",
       description: "Description3",
@@ -114,6 +129,7 @@ List<ProductModel> tequilaList = [
       secondStep: "Tekila3 step2",
       ingredient: "Ingredient1 Ingredient2 Ingredient3 Ingredient4"),
   ProductModel(
+   // id: 3,
       name: "Tekila 4",
       img: "assets/images/valeria.jpg",
       description: "Description4",
@@ -121,13 +137,15 @@ List<ProductModel> tequilaList = [
       secondStep: "Tekila4 step2",
       ingredient: "Ingredient1 Ingredient2 Ingredient3 Ingredient4"),
   ProductModel(
+   // id: 4,
       name: "Tekila 5",
-      img: "assets/images/osvaldo.jpg",
+      img: "assets/images/antonio_rose.jpg",
       description: "Description5",
       firstStep: "Tekila5 Step1",
       secondStep: "Tekila5 step2",
       ingredient: "Ingredient1 Ingredient2 Ingredient3"),
   ProductModel(
+   // id: 5,
       name: "Tekila 6",
       img: "assets/images/antonio_rose.jpg",
       description: "Description6",
@@ -138,6 +156,7 @@ List<ProductModel> tequilaList = [
 
 List<ProductModel> whiskeyList = [
   ProductModel(
+  //  id: 0,
       name: "Viski 1",
       img: "assets/images/antonio_rose.jpg",
       description: "Description1",
@@ -145,6 +164,7 @@ List<ProductModel> whiskeyList = [
       secondStep: "Viski1 step2",
       ingredient: "Ingredient1 Ingredient2 Ingredient3 Ingredient4"),
   ProductModel(
+   // id: 1,
       name: "Viski 2",
       img: "assets/images/isabella_mendes.jpg",
       description: "Description2",
@@ -152,6 +172,7 @@ List<ProductModel> whiskeyList = [
       secondStep: "Viski2 step2",
       ingredient: "Ingredient1 Ingredient2 Ingredient3 Ingredient4"),
   ProductModel(
+   // id: 2,
       name: "Viski 3",
       img: "assets/images/martini_drink.jpg",
       description: "Description3",
@@ -159,6 +180,7 @@ List<ProductModel> whiskeyList = [
       secondStep: "Viski3 step2",
       ingredient: "Ingredient1 Ingredient2"),
   ProductModel(
+  //  id: 3,
       name: "Viski 4",
       img: "assets/images/valeria.jpg",
       description: "Description4",
@@ -166,13 +188,15 @@ List<ProductModel> whiskeyList = [
       secondStep: "Viski4 step2",
       ingredient: "Ingredient1 Ingredient2 Ingredient3"),
   ProductModel(
+   // id: 4,
       name: "Viski 5",
-      img: "assets/images/osvaldo.jpg",
+      img: "assets/images/antonio_rose.jpg",
       description: "Description5",
       firstStep: "Viski5 Step1",
       secondStep: "Viski5 step2",
       ingredient: "Ingredient1 Ingredient2 Ingredient3 Ingredient4"),
   ProductModel(
+   // id: 5,
       name: "Viski 6",
       img: "assets/images/antonio_rose.jpg",
       description: "Description6",
@@ -183,6 +207,7 @@ List<ProductModel> whiskeyList = [
 
 List<ProductModel> wineList = [
   ProductModel(
+ //   id: 0,
       name: "Şarap 1",
       img: "assets/images/antonio_rose.jpg",
       description: "Description1",
@@ -190,6 +215,7 @@ List<ProductModel> wineList = [
       secondStep: "Şarap1 step2",
       ingredient: "Ingredient1 Ingredient2 Ingredient3 Ingredient4"),
   ProductModel(
+   // id: 1,
       name: "Şarap 2",
       img: "assets/images/isabella_mendes.jpg",
       description: "Description2",
@@ -197,6 +223,7 @@ List<ProductModel> wineList = [
       secondStep: "Şarap2 step2",
       ingredient: "Ingredient1 Ingredient2 Ingredient3 Ingredient4"),
   ProductModel(
+   // id: 2,
       name: "Şarap 3",
       img: "assets/images/martini_drink.jpg",
       description: "Description3",
@@ -204,6 +231,7 @@ List<ProductModel> wineList = [
       secondStep: "Şarap3 step2",
       ingredient: "Ingredient1 Ingredient2 Ingredient3 Ingredient4"),
   ProductModel(
+  //  id: 3,
       name: "Şarap 4",
       img: "assets/images/valeria.jpg",
       description: "Description4",
@@ -211,13 +239,15 @@ List<ProductModel> wineList = [
       secondStep: "Şarap4 step2",
       ingredient: "Ingredient1 Ingredient2 Ingredient3 Ingredient4"),
   ProductModel(
+  //  id: 4,
       name: "Şarap 5",
-      img: "assets/images/osvaldo.jpg",
+      img: "assets/images/antonio_rose.jpg",
       description: "Description5",
       firstStep: "Şarap5 Step1",
       secondStep: "Şarap5 step2",
       ingredient: "Ingredient1 Ingredient2 Ingredient3 Ingredient4"),
   ProductModel(
+   // id: 5,
       name: "Şarap 6",
       img: "assets/images/antonio_rose.jpg",
       description: "Description6",

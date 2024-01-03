@@ -1,4 +1,4 @@
-
+/*
 import 'package:cocktail_app/view/pages/cocktails/cocktails.dart';
 import 'package:cocktail_app/view/pages/detail_page/detail_page.dart';
 import 'package:flutter/material.dart';
@@ -152,4 +152,4 @@ class FavoritesState extends State<Favorites> {
       ),
     );
   }
-}
+}*/

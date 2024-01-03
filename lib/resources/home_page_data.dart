@@ -3,6 +3,7 @@ import 'package:cocktail_app/models/model.dart';
 
 List<ProductModel> horizontalList = [
   ProductModel(
+  //  id: 0,
       name: "Kokteyl 1",
       img: "assets/images/antonio_rose.jpg",
       description: "Description1",
@@ -10,6 +11,7 @@ List<ProductModel> horizontalList = [
       secondStep: "Kokteyl1 Step2",
       ingredient: "Ingredient1 Ingredient2 Ingredient3"),
   ProductModel(
+  //  id: 1,
       name: "Kokteyl 2",
       img: "assets/images/isabella_mendes.jpg",
       description: "Description2",
@@ -17,6 +19,7 @@ List<ProductModel> horizontalList = [
       secondStep: "Kokteyl2 Step2",
       ingredient: "Ingredient1 Ingredient2 Ingredient3"),
   ProductModel(
+  //  id: 2,
       name: "Kokteyl 3",
       img: "assets/images/martini_drink.jpg",
       description: "Description3",
@@ -24,6 +27,7 @@ List<ProductModel> horizontalList = [
       secondStep: "Kokteyl3 Step2",
       ingredient: "Ingredient1 Ingredient2 Ingredient3"),
   ProductModel(
+   // id: 3,
       name: "Kokteyl 4",
       img: "assets/images/valeria.jpg",
       description: "Description4",
@@ -34,6 +38,7 @@ List<ProductModel> horizontalList = [
 
 List<ProductModel> homePageAlcoholBoxList = [
   ProductModel(
+    //id: 0,
       name: "Alkol 1",
       img: "assets/images/antonio_rose.jpg",
       description: "Description1",
@@ -41,6 +46,7 @@ List<ProductModel> homePageAlcoholBoxList = [
       secondStep: "Alkol1 Step2",
       ingredient: "Ingredient1 Ingredient2 Ingredient3"),
   ProductModel(
+   // id: 1,
       name: "Alkol 2",
       img: "assets/images/isabella_mendes.jpg",
       description: "Description2",
@@ -48,6 +54,7 @@ List<ProductModel> homePageAlcoholBoxList = [
       secondStep: "Alkol2 Step2",
       ingredient: "Ingredient1 Ingredient2 Ingredient3"),
   ProductModel(
+   // id: 2,
       name: "Alkol 3",
       img: "assets/images/martini_drink.jpg",
       description: "Description3",
@@ -55,6 +62,7 @@ List<ProductModel> homePageAlcoholBoxList = [
       secondStep: "Alkol3 Step2",
       ingredient: "Ingredient1 Ingredient2 Ingredient3"),
   ProductModel(
+   // id: 3,
       name: "Alkol 4",
       img: "assets/images/valeria.jpg",
       description: "Description4",
