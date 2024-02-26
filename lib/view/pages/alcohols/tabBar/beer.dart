@@ -49,13 +49,16 @@ class Beer extends StatelessWidget {
         .cast<String>()
         .toList();
     return Scaffold(
-        body: tabBarItem(
-            name: beerNames,
-            image: beerImages,
-            description: beerDescription,
-            firstStep: beerFirstStep,
-            secondStep: beerSecondStep,
-          ingredient: beerIngredients
+        body: SingleChildScrollView(
+          child: tabBarItem(
+              name: beerNames,
+              image: beerImages,
+              description: beerDescription,
+              firstStep: beerFirstStep,
+              secondStep: beerSecondStep,
+            ingredient: beerIngredients,
+            context: context
+          ),
         ));
   }
 }

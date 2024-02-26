@@ -9,9 +9,9 @@ scroll(name, description, firstStep, secondStep, drinkIngredients) {
   final items = ingredientItems.split(' ');
 
   return DraggableScrollableSheet(
-      initialChildSize: 0.60,
+      initialChildSize: 0.65,
       maxChildSize: 1.0,
-      minChildSize: 0.60,
+      minChildSize: 0.65,
       builder: (context, scrollController) {
         return Container(
           padding: const EdgeInsets.symmetric(horizontal: 20),

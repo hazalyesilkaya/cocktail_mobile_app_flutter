@@ -50,13 +50,16 @@ class Liqueur extends StatelessWidget {
         .cast<String>()
         .toList();
     return Scaffold(
-        body: tabBarItem(
-            image: liqueurImages,
-            name: liqueurNames,
-            description: liqueurDescription,
-            firstStep: liqueurSteps,
-            secondStep: liqueurSecondStep,
-          ingredient: liqueurIngredients
+        body: SingleChildScrollView(
+          child: tabBarItem(
+              image: liqueurImages,
+              name: liqueurNames,
+              description: liqueurDescription,
+              firstStep: liqueurSteps,
+              secondStep: liqueurSecondStep,
+            ingredient: liqueurIngredients,
+            context: context
+          ),
         ));
   }
 }

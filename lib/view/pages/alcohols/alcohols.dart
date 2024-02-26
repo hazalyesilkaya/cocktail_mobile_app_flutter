@@ -80,35 +80,41 @@ class AlcoholsState extends State<Alcohols>
       child: SafeArea(
         child: Scaffold(
           backgroundColor: const Color.fromRGBO(244, 243, 243, 1),
-          appBar: AppBar(
-            bottom: TabBar(
-              labelColor: Colors.deepOrange,
-              controller: _tabController,
-              tabs: alcoholNames,
-              tabAlignment: TabAlignment.center,
-              labelStyle: const TextStyle(
-                  fontSize: 14,
-                  fontWeight: FontWeight.bold,
-                  fontFamily: "PetitFormal"),
-              indicator: const TabBarGradientIndicator(gradientColor: [
-                Colors.orange,
-                Colors.deepOrange,
-              ], indicatorWidth: 2),
-            ), //
-            // TabBar
-            title: Container(
-              alignment: Alignment.center,
-              child: const Text(
-                "Alkoller",
-                textAlign: TextAlign.center,
-                style: TextStyle(
-                    color: Colors.deepOrange,
-                    fontSize: 30,
-                    fontFamily: "Playball"),
+          appBar: PreferredSize(
+            preferredSize: Size.fromHeight(MediaQuery.of(context).size.height * 0.175),
+            child: AppBar(
+              bottom: TabBar(
+                labelColor: Colors.deepOrange,
+                controller: _tabController,
+                tabs: alcoholNames,
+                tabAlignment: TabAlignment.center,
+                labelStyle: const TextStyle(
+                    fontSize: 14,
+                    fontWeight: FontWeight.bold,
+                    fontFamily: "PetitFormal"),
+                indicator: const TabBarGradientIndicator(gradientColor: [
+                  Colors.orange,
+                  Colors.deepOrange,
+                ], indicatorWidth: 2),
+              ), //
+              // TabBar
+              title: Padding(
+                padding: const EdgeInsets.only(top: 10),
+                child: Container(
+                  alignment: Alignment.center,
+                  child: const Text(
+                    "Alkoller",
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                        color: Colors.deepOrange,
+                        fontSize: 31.5,
+                        fontFamily: "Playball"),
+                  ),
+                ),
               ),
+              backgroundColor: Colors.white60,
+              automaticallyImplyLeading: false,
             ),
-            backgroundColor: Colors.white60,
-            automaticallyImplyLeading: false,
           ), //
           // AppBar
           body: TabBarView(
@@ -126,3 +132,4 @@ class AlcoholsState extends State<Alcohols>
     ); // De
   }
 }
+

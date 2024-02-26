@@ -3,9 +3,9 @@
 import 'package:cocktail_app/resources/cocktails_data.dart';
 import 'package:cocktail_app/animations/animation.dart';
 import 'package:flutter/material.dart';
-import 'package:hive_flutter/hive_flutter.dart';
 import 'package:provider/provider.dart';
 import '../../../models/model.dart';
+import '../../provider/app_provider.dart';
 import '../detail_page/detail_page.dart';
 import '../menu_page/favorites_page.dart';
 
@@ -52,7 +52,6 @@ class CocktailsState extends State<Cocktails>
     List<dynamic> widget = [];
     int index = 0;
     for (var element in filteredItems) {
-      element.color = Colors.red;
       element.index = index;
       widget.add(filteredItems.isNotEmpty
           ? ListTile(
@@ -68,10 +67,10 @@ class CocktailsState extends State<Cocktails>
                   height: 85,
                   decoration: BoxDecoration(
                       gradient: LinearGradient(colors: [
-                        Colors.deepOrange.shade900.withOpacity(.8),
-                        Colors.deepOrange.shade900.withOpacity(.3),
-                        Colors.deepOrange.shade900.withOpacity(.1),
-                        Colors.white12.withOpacity(.1),
+                        Colors.deepOrange.shade900.withOpacity(.8), //8
+                        Colors.deepOrange.shade900.withOpacity(.45), //3
+                        Colors.deepOrange.shade900.withOpacity(.15), //1
+                        Colors.white12.withOpacity(.07), //1
                       ]),
                       borderRadius: BorderRadius.circular(10)),
                   child: Row(
@@ -112,7 +111,7 @@ class CocktailsState extends State<Cocktails>
                                   element.name.toString(),
                                   style: TextStyle(
                                     color: Colors.blueGrey.shade900,
-                                    fontSize: 20,
+                                    fontSize: 18,
                                     fontWeight: FontWeight.bold,
                                   ),
                                 ),
@@ -120,7 +119,7 @@ class CocktailsState extends State<Cocktails>
                                   "Detaylı Bilgi",
                                   style: TextStyle(
                                       color: Colors.blueGrey.shade700,
-                                      fontSize: 13),
+                                      fontSize: 12),
                                 ),
                               ],
                             ),
@@ -133,13 +132,13 @@ class CocktailsState extends State<Cocktails>
               ),
               trailing: IconButton(
                 icon: Icon(Icons.favorite,
-                    size: 23,
+                    size: 21,
                     color: lastList
                             .map((e) => e.id)
                             // .toSet()
                             // .intersection(filteredItems.map((e) => e.id).toSet())
                             .contains(element.id)
-                        ? element.color
+                        ? Colors.red
                         : Colors.grey[350]),
                 onPressed: () {
                   // Şuanki zamanı al
@@ -147,7 +146,7 @@ class CocktailsState extends State<Cocktails>
                   // Eğer daha önce bir tıklama yapılmışsa ve aradaki süre 500 milisaniyeden küçükse, işlemi yapma
                   if (lastClickTime != null &&
                       now.difference(lastClickTime!) <
-                          Duration(milliseconds: 500)) {
+                          const Duration(milliseconds: 500)) {
                     return;
                   }
                   // Zamanı güncelle
@@ -178,12 +177,12 @@ class CocktailsState extends State<Cocktails>
         height: 17,
       ),
       Padding(
-        padding: const EdgeInsets.only(left: 22),
+        padding: const EdgeInsets.only(left: 22, right: 15),
         child: Row(
           children: [
-            const SizedBox(
-              width: 306,
-              child: Text(
+             SizedBox(
+              width: MediaQuery.of(context).size.width * 0.68,
+              child: const Text(
                 'Find Your Cocktail',
                 style: TextStyle(
                     color: Colors.deepOrange,
@@ -195,17 +194,20 @@ class CocktailsState extends State<Cocktails>
             const SizedBox(
               width: 10,
             ),
-            IconButton(
-                onPressed: () {
-                  Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                          builder: (context) => const Favorites()));
-                },
-                icon: const Icon(
-                  Icons.bookmark,
-                  size: 25,
-                ))
+            SizedBox(
+              width: MediaQuery.of(context).size.width * 0.2,
+              child: IconButton(
+                  onPressed: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const Favorites()));
+                  },
+                  icon: const Icon(
+                    Icons.bookmark,
+                    size: 25,
+                  )),
+            )
           ],
         ),
       ),
@@ -251,45 +253,5 @@ class CocktailsState extends State<Cocktails>
   }
 }
 
-class AppProvider with ChangeNotifier {
-  List<ProductModel> _inventoryList = [];
-  List<ProductModel> get inventoryList => _inventoryList;
 
-  getItem() async {
-    final box = await Hive.openBox<ProductModel>('inventory');
-    _inventoryList = box.values.toList();
-    notifyListeners();
-  }
-
-  addFavoriteItems(ProductModel item) async {
-    final box = await Hive.openBox<ProductModel>('inventory');
-    _inventoryList.add(item);
-    item.color = Colors.red;
-    box.add(item);
-    notifyListeners();
-  }
-
-  deleteItem(int index) async {
-    final box = Hive.box<ProductModel>('inventory');
-    box.deleteAt(index);
-    notifyListeners();
-  }
-}
-
-class ColorAdapter extends TypeAdapter<Color> {
-  @override
-  final int typeId = 1;
-
-  @override
-  Color read(BinaryReader reader) {
-    final colorValue = reader.readInt(); // Read the color value as an integer
-    return Color(colorValue); // Convert the integer to a Color object
-  }
-
-  @override
-  void write(BinaryWriter writer, Color obj) {
-    final colorValue = obj.value; // Get the color value as an integer
-    writer.writeInt(colorValue); // Write the color value to Hive
-  }
-}
 

@@ -48,13 +48,16 @@ class Wine extends StatelessWidget {
         .cast<String>()
         .toList();
     return Scaffold(
-        body: tabBarItem(
-            image: wineImages,
-            name: wineNames,
-            description: wineDescription,
-            firstStep: wineFirstStep,
-            secondStep: wineSecondStep,
-          ingredient: wineIngredients
-           ));
+        body: SingleChildScrollView(
+          child: tabBarItem(
+              image: wineImages,
+              name: wineNames,
+              description: wineDescription,
+              firstStep: wineFirstStep,
+              secondStep: wineSecondStep,
+            ingredient: wineIngredients,
+            context: context
+             ),
+        ));
   }
 }

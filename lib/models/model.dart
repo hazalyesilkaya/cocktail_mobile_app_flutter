@@ -3,8 +3,9 @@ import 'dart:ui';
 
 import 'package:hive/hive.dart';
 part 'model.g.dart';
+
 @HiveType(typeId: 0)
-class ProductModel{
+class ProductModel {
   @HiveField(0)
   String? name;
   @HiveField(1)
@@ -24,21 +25,18 @@ class ProductModel{
   @HiveField(8)
   bool isShow = false;
   @HiveField(9)
-  String? colorKey;
-  @HiveField(10)
   Color? color;
 
-  ProductModel(
-      {this.name,
-      this.img,
-      this.description,
-      this.firstStep,
-      this.secondStep,
-      this.ingredient,
-      this.id,
-        this.colorKey,
-        this.color,
-      });
+  ProductModel({
+    this.name,
+    this.img,
+    this.description,
+    this.firstStep,
+    this.secondStep,
+    this.ingredient,
+    this.id,
+    this.color,
+  });
 
   ProductModel.fromJson(Map<String, dynamic> json) {
     name = json['name'];
@@ -49,7 +47,6 @@ class ProductModel{
     ingredient = json['ingredient'];
     id = json['id'];
   }
-
 
   Map<String, dynamic> toJson() {
     final Map<String, dynamic> data = <String, dynamic>{};
@@ -62,5 +59,4 @@ class ProductModel{
     data['id'] = id;
     return data;
   }
-
 }

@@ -1,6 +1,7 @@
 import 'dart:io';
-import 'package:cocktail_app/view/pages/cocktails/cocktails.dart';
+import 'package:cocktail_app/view/color_adapter/color_adapter.dart';
 import 'package:cocktail_app/view/pages/start/starter_page.dart';
+import 'package:cocktail_app/view/provider/app_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:provider/provider.dart';
@@ -16,8 +17,6 @@ void main() async{
   Hive.registerAdapter(ProductModelAdapter());
   Hive.registerAdapter(ColorAdapter());
   await Hive.openBox<ProductModel>('inventory');
-  //await Hive.openBox<Color>('colorBox');
-  //await AppProvider().getItem();
   //await Hive.deleteBoxFromDisk('inventory');
   //await Hive.initFlutter();
   runApp(ChangeNotifierProvider(

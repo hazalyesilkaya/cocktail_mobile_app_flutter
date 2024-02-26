@@ -1,99 +1,82 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_swiper_view/flutter_swiper_view.dart';
 
 import '../models/model.dart';
 import '../view/pages/detail_page/detail_page.dart';
 
 Widget horizontalListWidget({context, name, img, description, firstStep, secondStep, ingredient}) {
-  return Column(
-    children: [
-      Container(
-        decoration: BoxDecoration(boxShadow: [
-          BoxShadow(
-            color: Colors.grey.shade400,
-            offset: const Offset(20, 10),
-            blurRadius: 35,
-          )
-        ]),
-        width: double.infinity,
-        height: 190,
-        // Using ListView.builder
-        child: ListView.builder(
-          physics: const PageScrollPhysics(),
-          shrinkWrap: true,
-          scrollDirection: Axis.horizontal,
-          itemCount: name.length,
-          // list item builder
-          itemBuilder: (BuildContext ctx, index) {
-            return Container(
-              key: ValueKey(img[index]),
-              margin: const EdgeInsets.all(6),
-              width: 140,
-              alignment: Alignment.center,
-              child: ListView(
-                  physics: const NeverScrollableScrollPhysics(),
+  return Padding(
+    padding: const EdgeInsets.all(3.0),
+    child: Column(
+      children: [
+        Container(
+          decoration: BoxDecoration(boxShadow: [
+            BoxShadow(
+              color: Colors.grey.shade400,
+              offset: const Offset(20, 10),
+              blurRadius: 35,
+            )
+          ]),
+          width: double.infinity,
+          height: 130,
+          // Using ListView.builder
+          child: Swiper(
+            itemCount: name.length,
+            viewportFraction: 0.63,
+            scale: 0.5,
+            //itemWidth: 100,
+            //itemHeight: 190,
+            itemBuilder: (BuildContext ctx, int index) {
+              return Container(
+                key: ValueKey(img[index]),
+                margin: const EdgeInsets.all(6),
+                alignment: Alignment.center,
+                child: Stack(
                   children: [
-                    AspectRatio(
-                        aspectRatio: 2.3 / 2.85,
-                        child: Center(
-                            child: Stack(
-                          children: [
-                            ClipRRect(
-                              borderRadius: BorderRadius.circular(20),
-                              child: Material(
-                                child: Ink.image(
-                                  image: AssetImage(img[index]),
-                                  fit: BoxFit.cover,
-                                  child: InkWell(
-                                    onTap: () {
-                                      Navigator.push(
-                                          context,
-                                          MaterialPageRoute(
-                                            builder: (context) =>
-                                                DetailPage(ProductModel(
-                                              name: name[index],
-                                              img: img[index],
-                                              description: description[index],
-                                              firstStep: firstStep[index],
-                                                  secondStep: secondStep[index],
-                                                  ingredient: ingredient[index]
-                                            )),
-                                          ));
-                                    },
-                                  ),
-                                ),
+                    ClipRRect(
+                      borderRadius: BorderRadius.circular(28),
+                      child: Material(
+                        child: InkWell(
+                          onTap: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => DetailPage(ProductModel(
+                                  name: name[index],
+                                  img: img[index],
+                                  description: description[index],
+                                  firstStep: firstStep[index],
+                                  secondStep: secondStep[index],
+                                  ingredient: ingredient[index],
+                                )),
                               ),
-                            ),
-                            Container(
-                              alignment: Alignment.bottomCenter,
-                              child: Text(
-                                name[index],
-                                style: const TextStyle(
-                                    color: Colors.white,
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 18.0),
-                              ),
-                            )
-                          ],
-                        ))),
-                    Container(
-                      decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(20),
-                          gradient: LinearGradient(
-                              begin: Alignment.bottomRight,
-                              stops: const [
-                                0.1,
-                                0.9,
-                              ],
-                              colors: [
-                                Colors.black.withOpacity(.8),
-                                Colors.black.withOpacity(.1),
-                              ])),
+                            );
+                          },
+                          child: Ink.image(
+                            image: AssetImage(img[index]),
+                            fit: BoxFit.cover,
+                          ),
+                        ),
+                      ),
                     ),
-                  ]),
-            );
-          },
+                    // Container(
+                    //   alignment: Alignment.bottomCenter,
+                    //   child: Text(
+                    //     name[index],
+                    //     style: const TextStyle(
+                    //       color: Colors.white,
+                    //       fontWeight: FontWeight.bold,
+                    //       fontSize: 18.0,
+                    //     ),
+                    //   ),
+                    // ),
+                  ],
+                ),
+              );
+            },
+          ),
         ),
-      ),
-    ],
+      ],
+    ),
   );
 }

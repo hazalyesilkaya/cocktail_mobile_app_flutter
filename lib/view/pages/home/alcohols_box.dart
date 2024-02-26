@@ -52,6 +52,6 @@ class AlcoholsBox extends StatelessWidget {
         description: alcoholsDescription,
         firstStep: alcoholsFirstStep,
         secondStep: alcoholsSecondStep,
-    ingredient: alcoholsIngredients);
+    ingredient: alcoholsIngredients,);
   }
 }

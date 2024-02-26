@@ -8,11 +8,11 @@ class HintText extends StatelessWidget {
   });
   @override
   Widget build(BuildContext context) {
-    return Column(children: [
-      const SizedBox(
+    return const Column(children: [
+      SizedBox(
         height: 17,
       ),
-      const Text(
+      Text(
         'Find Your Cocktail',
         style: TextStyle(
             color: Colors.deepOrange,
@@ -20,28 +20,28 @@ class HintText extends StatelessWidget {
             fontWeight: FontWeight.bold,
             fontFamily: "Playball"),
       ),
-      const SizedBox(
-        height: 10,
-      ),
-      Container(
-        padding: const EdgeInsets.all(3),
-        decoration: BoxDecoration(
-            color: const Color.fromRGBO(244, 243, 243, 1),
-            borderRadius: BorderRadius.circular(10)),
-        child: const TextField(
-          decoration: InputDecoration(
-              border: InputBorder.none,
-              prefixIcon: Icon(
-                Icons.search,
-                color: Colors.black87,
-              ),
-              hintText: "Search you're looking for",
-              hintStyle: TextStyle(
-                color: Colors.grey,
-                fontSize: 15,
-              )),
-        ),
-      ),
+      // SizedBox(
+      //   height: 10,
+      // ),
+      // Container(
+      //   padding: const EdgeInsets.all(3),
+      //   decoration: BoxDecoration(
+      //       color: const Color.fromRGBO(244, 243, 243, 1),
+      //       borderRadius: BorderRadius.circular(10)),
+      //   child: const TextField(
+      //     decoration: InputDecoration(
+      //         border: InputBorder.none,
+      //         prefixIcon: Icon(
+      //           Icons.search,
+      //           color: Colors.black87,
+      //         ),
+      //         hintText: "Search you're looking for",
+      //         hintStyle: TextStyle(
+      //           color: Colors.grey,
+      //           fontSize: 15,
+      //         )),
+      //   ),
+      // ),
     ]);
   }
 }

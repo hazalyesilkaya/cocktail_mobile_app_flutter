@@ -49,13 +49,16 @@ class Whiskey extends StatelessWidget {
         .cast<String>()
         .toList();
     return Scaffold(
-        body: tabBarItem(
-            image: whiskeyImages,
-            name: whiskeyNames,
-            description: whiskeyDescription,
-            firstStep: whiskeyFirstStep,
-            secondStep: whiskeySecondStep,
-          ingredient: whiskeyIngredients
+        body: SingleChildScrollView(
+          child: tabBarItem(
+              image: whiskeyImages,
+              name: whiskeyNames,
+              description: whiskeyDescription,
+              firstStep: whiskeyFirstStep,
+              secondStep: whiskeySecondStep,
+            ingredient: whiskeyIngredients,
+              context: context
+          ),
         ));
   }
 }

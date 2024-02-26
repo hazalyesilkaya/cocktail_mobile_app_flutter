@@ -1,5 +1,6 @@
 // ignore_for_file: must_be_immutable, file_names,  library_private_types_in_public_api
 
+import 'package:cocktail_app/view/pages/menu_page/favorites_page.dart';
 import 'package:cocktail_app/view/pages/menu_page/menu.dart';
 import 'package:flutter/material.dart';
 import 'package:cocktail_app/view/pages/home/home.dart';
@@ -34,7 +35,7 @@ class NavigationPageState extends State<NavigationPage> {
       child: Scaffold(
         backgroundColor: const Color.fromRGBO(244, 243, 243, 1),
         appBar: PreferredSize(
-          preferredSize: const Size.fromHeight(40.0),
+          preferredSize: Size.fromHeight(MediaQuery.of(context).size.height * 0.064),
           child: AppBar(
             backgroundColor: Colors.white54,
             flexibleSpace: FlexibleSpaceBar(
@@ -58,6 +59,7 @@ class NavigationPageState extends State<NavigationPage> {
             FirstPage(),
             Cocktails(),
             Alcohols(),
+            Favorites(),
             Menu(),
           ],
         ),
@@ -66,26 +68,32 @@ class NavigationPageState extends State<NavigationPage> {
             BottomNavigationBarItem(
               icon: Icon(Icons.home),
               label: 'Keşfet',
-              backgroundColor: Colors.white24,
+              backgroundColor: Colors.white12,
             ),
             BottomNavigationBarItem(
               icon: Icon(Icons.local_bar),
               label: 'Kokteyller',
-              backgroundColor: Colors.white24,
+              backgroundColor: Colors.white12,
             ),
             BottomNavigationBarItem(
               icon: Icon(Icons.liquor_outlined),
               label: 'Alkoller',
-              backgroundColor: Colors.white24,
+              backgroundColor: Colors.white12,
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.favorite),
+              label: 'Favoriler',
+              backgroundColor: Colors.white12,
             ),
             BottomNavigationBarItem(
               icon: Icon(Icons.menu),
               label: 'Menü',
-              backgroundColor: Colors.white24,
+              backgroundColor: Colors.white12,
             ),
           ],
           currentIndex: _selectedIndex,
-          selectedItemColor: Colors.amber[800],
+          selectedItemColor: Colors.orange[800],
+          //selectedItemColor: Colors.grey[850],
           onTap: _onItemTapped,
         ),
       ),

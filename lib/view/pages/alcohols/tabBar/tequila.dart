@@ -49,13 +49,16 @@ class Tequila extends StatelessWidget {
         .cast<String>()
         .toList();
     return Scaffold(
-        body: tabBarItem(
-            image: tequilaImages,
-            name: tequilaNames,
-            description: tequilaDescription,
-            firstStep: tequilaFirstStep,
-            secondStep: tequilaSecondStep,
-          ingredient: tequilaIngredients
+        body: SingleChildScrollView(
+          child: tabBarItem(
+              image: tequilaImages,
+              name: tequilaNames,
+              description: tequilaDescription,
+              firstStep: tequilaFirstStep,
+              secondStep: tequilaSecondStep,
+            ingredient: tequilaIngredients,
+            context: context
+          ),
         ));
   }
 }

@@ -5,6 +5,7 @@ import 'package:cocktail_app/view/pages/home/alcohols_box.dart';
 import 'package:cocktail_app/view/pages/home/cocktails_horizontal_list.dart';
 import 'package:cocktail_app/view/pages/home/headers.dart';
 import 'package:cocktail_app/view/pages/home/hint_text.dart';
+import 'package:cocktail_app/view/pages/home/knowledge_part.dart';
 import 'package:flutter/material.dart';
 
 class FirstPage extends StatefulWidget {
@@ -24,20 +25,29 @@ class FirstPageState extends State<FirstPage> {
         child: SingleChildScrollView(
           child: Column(
             children: <Widget>[
-              HintText(),
-              SizedBox(
-                height: 10,
-              ),
+               HintText(),
+              // SizedBox(
+              //   height: 10,
+              // ),
+              CocktailHorizontalList(),
               FadeAnimation(
                0.3,
                 Padding(
-                  padding: EdgeInsets.all(6.0),
+                  padding: EdgeInsets.only(right: 5, left: 5, bottom: 2),
                   child: Column(
                     children: [
-                      Headers("Kokteyller"),
-                      CocktailHorizontalList(),
+                    //  Headers("Kokteyller"),
+                    //   CocktailHorizontalList(),
+                      SizedBox(
+                        height: 18,
+                      ),
                       Headers("Alkoller"),
                       AlcoholsBox(),
+                      SizedBox(
+                        height: 15,
+                      ),
+                      Headers("Bilgi"),
+                      Knowledge()
                     ],
                   ),
                 ),

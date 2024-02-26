@@ -12,7 +12,7 @@ Widget makeMenuItem({context, icon, name}) {
           0.3,
           Container(
             width: 330.0,
-            padding: const EdgeInsets.fromLTRB(7.0, 14.0, 7.0, 14.0),
+            padding: const EdgeInsets.fromLTRB(7.0, 14.0, 7.0,1.0),
             decoration: BoxDecoration(
                 color: Colors.red[200],
                 borderRadius: BorderRadius.circular(20)),
@@ -55,8 +55,8 @@ Widget makeMenuItem({context, icon, name}) {
                   builder: (context) => const Notes()));
         } else if (icon == Icons.ac_unit_outlined) {
           final url = Uri(
-            scheme: 'mailto',
-            path: 'yesilkayahazal@gmail.com',
+            scheme: "mailto",
+            path: "yesilkayahazal@gmail.com",
           );
           if (await canLaunchUrl(url)) {
             launchUrl(url);

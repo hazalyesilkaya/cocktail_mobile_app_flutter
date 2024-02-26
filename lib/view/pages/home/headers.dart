@@ -13,26 +13,55 @@ class HeadersState extends State<Headers> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      alignment: Alignment.centerLeft,
-      height: 36,
+      alignment: Alignment.center,
+      height: 33,
       width: MediaQuery.of(context).size.width,
-      margin: const EdgeInsets.only(left: 5),
+      margin: const EdgeInsets.only(right: 10),
       decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(10),
+       // borderRadius: BorderRadius.circular(10),
+          boxShadow: [
+            BoxShadow(
+              color: Colors.grey.shade400,
+              offset: const Offset(12, 5),
+              blurRadius: 20,
+            )
+          ]
       ),
       child: Padding(
-        padding: const EdgeInsets.only(left: 12),
-        child: Text(
-          widget.title,
-          textAlign: TextAlign.left,
-          style: TextStyle(
-            fontSize: 19,
-            color: Colors.blueGrey[700],
-            fontWeight: FontWeight.bold,
-            fontFamily: "PetitFormal",
+        padding: const EdgeInsets.only(left: 35, right: 35),
+        child: ClipRRect(
+          borderRadius: BorderRadius.circular(10),
+          child: Container(
+            width: 155,
+            color: Colors.blueGrey[900],
+            child: Center(
+              child: Text(
+                widget.title,
+                textAlign: TextAlign.center,
+                style: const TextStyle(
+                  fontSize: 16,
+                  color: Colors.white,
+                  fontWeight: FontWeight.bold,
+                  fontFamily: "PetitFormal",
+                ),
+              ),
+            ),
           ),
         ),
       ),
+      // Padding(
+      //   padding: const EdgeInsets.only(left: 35, right: 35),
+      //   child: Text(
+      //     widget.title,
+      //     textAlign: TextAlign.center,
+      //     style: TextStyle(
+      //       fontSize: 18,
+      //       color: Colors.blueGrey[900],
+      //       fontWeight: FontWeight.bold,
+      //       fontFamily: "PetitFormal",
+      //     ),
+      //   ),
+      // ),
     );
   }
 }

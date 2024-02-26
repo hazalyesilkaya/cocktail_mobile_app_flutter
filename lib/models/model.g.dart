@@ -24,8 +24,7 @@ class ProductModelAdapter extends TypeAdapter<ProductModel> {
       secondStep: fields[4] as String?,
       ingredient: fields[5] as String?,
       id: fields[6] as int?,
-      colorKey: fields[9] as String?,
-      color: fields[10] as Color?,
+      color: fields[9] as Color?,
     )
       ..index = fields[7] as int
       ..isShow = fields[8] as bool;
@@ -34,7 +33,7 @@ class ProductModelAdapter extends TypeAdapter<ProductModel> {
   @override
   void write(BinaryWriter writer, ProductModel obj) {
     writer
-      ..writeByte(11)
+      ..writeByte(10)
       ..writeByte(0)
       ..write(obj.name)
       ..writeByte(1)
@@ -54,8 +53,6 @@ class ProductModelAdapter extends TypeAdapter<ProductModel> {
       ..writeByte(8)
       ..write(obj.isShow)
       ..writeByte(9)
-      ..write(obj.colorKey)
-      ..writeByte(10)
       ..write(obj.color);
   }
 
