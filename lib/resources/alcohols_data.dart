@@ -246,7 +246,7 @@ List<ProductModel> whiskeyList = [
   ProductModel(
    // id: 5,
       name: "Viski 6",
-      img: "assets/images/antonio_rose.jpg",
+      img: "assets/images/isabella_mendes.jpg",
       description: "Description6",
       firstStep: "Viski6 Step1",
       secondStep: "Viski6 step2",
@@ -254,7 +254,7 @@ List<ProductModel> whiskeyList = [
   ProductModel(
     // id: 5,
       name: "Viski 7",
-      img: "assets/images/antonio_rose.jpg",
+      img: "assets/images/martini_drink.jpg",
       description: "Description6",
       firstStep: "Viski6 Step1",
       secondStep: "Viski6 step2",
@@ -262,7 +262,7 @@ List<ProductModel> whiskeyList = [
   ProductModel(
     // id: 5,
       name: "Viski 8",
-      img: "assets/images/antonio_rose.jpg",
+      img: "assets/images/valeria.jpg",
       description: "Description6",
       firstStep: "Viski6 Step1",
       secondStep: "Viski6 step2",
