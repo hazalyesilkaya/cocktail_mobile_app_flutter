@@ -23,7 +23,7 @@ void main() async{
     create: (context) => AppProvider(),
     child: MaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(fontFamily: 'Roboto'),
+      theme: ThemeData(fontFamily: 'TimesNewRoman'),
       home: const StarterPage(),
     ),
   ));

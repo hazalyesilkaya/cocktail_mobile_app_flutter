@@ -6,10 +6,10 @@ import 'package:cocktail_app/view/components/ingredients.dart';
 
 scroll(name, description, firstStep, secondStep, drinkIngredients) {
   String ingredientItems = drinkIngredients;
-  final items = ingredientItems.split(' ');
+  final items = ingredientItems.split(',');
 
   return DraggableScrollableSheet(
-      initialChildSize: 0.65,
+      initialChildSize: 0.67,
       maxChildSize: 1.0,
       minChildSize: 0.65,
       builder: (context, scrollController) {
@@ -46,7 +46,7 @@ scroll(name, description, firstStep, secondStep, drinkIngredients) {
                     style: TextStyle(
                         fontSize: 26,
                         fontWeight: FontWeight.bold,
-                        color: Colors.blueGrey[700],
+                        color: Colors.blueGrey[900],
                         fontFamily: "PetitFormal"),
                     /*   style: Theme
                         .of(context)
@@ -65,7 +65,7 @@ scroll(name, description, firstStep, secondStep, drinkIngredients) {
                       .copyWith(color: Colors.grey),
                 ),
                 const SizedBox(
-                  height: 15,
+                  height: 5,
                 ),
                 const Padding(
                   padding: EdgeInsets.symmetric(vertical: 15),
@@ -76,9 +76,9 @@ scroll(name, description, firstStep, secondStep, drinkIngredients) {
                 Text(
                   'Açıklama',
                   style: TextStyle(
-                      fontSize: 26,
+                      fontSize: 22,
                       fontWeight: FontWeight.bold,
-                      color: Colors.blueGrey[700],
+                      color: Colors.blueGrey[600],
                       fontFamily: "PetitFormal"),
                 ),
                 const SizedBox(
@@ -100,9 +100,9 @@ scroll(name, description, firstStep, secondStep, drinkIngredients) {
                 Text(
                   "Malzemeler",
                   style: TextStyle(
-                      fontSize: 26,
+                      fontSize: 22,
                       fontWeight: FontWeight.bold,
-                      color: Colors.blueGrey[700],
+                      color: Colors.blueGrey[600],
                       fontFamily: "PetitFormal"),
                 ),
                 const SizedBox(
@@ -123,9 +123,9 @@ scroll(name, description, firstStep, secondStep, drinkIngredients) {
                 Text(
                   "Tarif",
                   style: TextStyle(
-                      fontSize: 26,
+                      fontSize: 22,
                       fontWeight: FontWeight.bold,
-                      color: Colors.blueGrey[700],
+                      color: Colors.blueGrey[600],
                       fontFamily: "PetitFormal"),
                 ),
                 const SizedBox(

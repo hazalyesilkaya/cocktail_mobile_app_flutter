@@ -13,13 +13,11 @@ class Menu extends StatefulWidget {
 class MenuState extends State<Menu> {
   final iconList = [
     Icons.add,
-    Icons.account_circle,
     Icons.ac_unit_outlined,
     Icons.access_alarms_rounded
   ];
   final menuItemNames = [
     "Favoriler",
-    "Notların",
     "İletişim Kur",
     "Yorum Yaz"
   ];
@@ -29,11 +27,11 @@ class MenuState extends State<Menu> {
       child: Column(
         children: [
           Padding(
-            padding: const EdgeInsets.only(top: 20.0),
+            padding: const EdgeInsets.only(top: 35.0),
             child: ListView.builder(
               physics: const NeverScrollableScrollPhysics(),
               shrinkWrap: true,
-              itemCount: 4,
+              itemCount: 3,
               itemBuilder: (context, index) =>
                   menuItems(context, iconList, index, menuItemNames),
             ),

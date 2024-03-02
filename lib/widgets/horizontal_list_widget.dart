@@ -18,12 +18,12 @@ Widget horizontalListWidget({context, name, img, description, firstStep, secondS
             )
           ]),
           width: double.infinity,
-          height: 130,
+          height: 135,
           // Using ListView.builder
           child: Swiper(
             itemCount: name.length,
-            viewportFraction: 0.63,
-            scale: 0.5,
+            viewportFraction: 0.65,
+            scale: 0.55,
             //itemWidth: 100,
             //itemHeight: 190,
             itemBuilder: (BuildContext ctx, int index) {

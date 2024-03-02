@@ -48,8 +48,8 @@ class StarterPageState extends State<StarterPage>
         child: Container(
           decoration: const BoxDecoration(
               image: DecorationImage(
-                  image: AssetImage('assets/images/martini_drink.jpg'),
-                  fit: BoxFit.cover)),
+                  image: AssetImage('assets/images/starter.jpg'),
+                  fit: BoxFit.fitHeight)),
           child: Container(
             decoration: BoxDecoration(
                 gradient:
@@ -59,7 +59,7 @@ class StarterPageState extends State<StarterPage>
               Colors.black.withOpacity(.2),
             ])),
             child: Padding(
-              padding: const EdgeInsets.all(20.0),
+              padding: const EdgeInsets.only(right: 20, left: 20, bottom: 50),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 mainAxisAlignment: MainAxisAlignment.end,
@@ -71,17 +71,19 @@ class StarterPageState extends State<StarterPage>
                         style: TextStyle(
                             color: Colors.white,
                             fontSize: 50,
-                            fontWeight: FontWeight.bold),
+                            fontWeight: FontWeight.bold,
+                        fontFamily: "Roboto"),
                       )),
                   const SizedBox(
-                    height: 15,
+                    height: 30,
                   ),
                   const FadeAnimation(
                       1,
                       Text(
                         'Discover Cocktail Types',
                         style: TextStyle(
-                            color: Colors.white, height: 1.4, fontSize: 18),
+                            color: Colors.white, height: 1.4, fontSize: 18,
+                        fontFamily: "Roboto"),
                       )),
                   const SizedBox(
                     height: 20,
@@ -103,7 +105,9 @@ class StarterPageState extends State<StarterPage>
                                 minWidth: double.infinity,
                                 child: const Text(
                                   "Start",
-                                  style: TextStyle(color: Colors.white),
+                                  style: TextStyle(color: Colors.white,
+                                      fontFamily: "Roboto",
+                                      fontSize: 18),
                                 ),
                               ),
                             ))),

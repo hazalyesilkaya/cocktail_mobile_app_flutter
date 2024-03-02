@@ -75,7 +75,7 @@ Widget tabBarItem({image, name, description, firstStep, secondStep, ingredient, 
                                 style: const TextStyle(
                                     color: Colors.white,
                                     fontWeight: FontWeight.bold,
-                                    fontSize: 20.0),
+                                    fontSize: 17.0),
                               ),
                             )
                           ],

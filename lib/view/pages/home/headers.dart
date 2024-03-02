@@ -33,14 +33,14 @@ class HeadersState extends State<Headers> {
           borderRadius: BorderRadius.circular(10),
           child: Container(
             width: 155,
-            color: Colors.blueGrey[900],
+            color: Colors.blueGrey[800],
             child: Center(
               child: Text(
                 widget.title,
                 textAlign: TextAlign.center,
-                style: const TextStyle(
+                style: TextStyle(
                   fontSize: 16,
-                  color: Colors.white,
+                  color: Colors.grey[200],
                   fontWeight: FontWeight.bold,
                   fontFamily: "PetitFormal",
                 ),

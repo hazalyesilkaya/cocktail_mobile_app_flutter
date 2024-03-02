@@ -8,6 +8,7 @@ import 'package:cocktail_app/view/pages/home/hint_text.dart';
 import 'package:cocktail_app/view/pages/home/knowledge_part.dart';
 import 'package:flutter/material.dart';
 
+
 class FirstPage extends StatefulWidget {
   const FirstPage({
     super.key,
@@ -41,12 +42,12 @@ class FirstPageState extends State<FirstPage> {
                       SizedBox(
                         height: 18,
                       ),
-                      Headers("Alkoller"),
+                      Headers("Mokteyl"),
                       AlcoholsBox(),
                       SizedBox(
                         height: 15,
                       ),
-                      Headers("Bilgi"),
+                      Headers("Bilgiler"),
                       Knowledge()
                     ],
                   ),

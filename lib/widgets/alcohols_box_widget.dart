@@ -61,10 +61,10 @@ Widget alcoholBox({name, img, description, firstStep, secondStep, ingredient}) {
                             alignment: Alignment.bottomCenter,
                             child: Text(
                               name[index],
-                              style: const TextStyle(
-                                  color: Colors.white,
+                              style: TextStyle(
+                                  color: Colors.orange[100],
                                   fontWeight: FontWeight.bold,
-                                  fontSize: 20.0),
+                                  fontSize: 17.0),
                             ),
                           )
                         ],
