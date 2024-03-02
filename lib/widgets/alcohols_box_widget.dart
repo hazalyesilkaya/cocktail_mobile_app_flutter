@@ -62,7 +62,7 @@ Widget alcoholBox({name, img, description, firstStep, secondStep, ingredient}) {
                             child: Text(
                               name[index],
                               style: TextStyle(
-                                  color: Colors.orange[100],
+                                  color: Colors.grey[300],
                                   fontWeight: FontWeight.bold,
                                   fontSize: 17.0),
                             ),
