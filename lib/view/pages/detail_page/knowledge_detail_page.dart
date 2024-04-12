@@ -3,7 +3,6 @@
 import 'package:cocktail_app/models/knowledge_model.dart';
 import 'package:flutter/material.dart';
 
-import '../../components/button_arrow.dart';
 
 class KnowledgeDetailPage extends StatefulWidget {
   KnowledgeModel model;
@@ -16,24 +15,24 @@ class KnowledgeDetailState extends State<KnowledgeDetailPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.transparent, // Arka plan rengini ayarla
+        elevation: 0, // Gölgeyi kaldır
+        leading: SizedBox( // Sağa kaydırmak için bir SizedBox ekleyin
+          width: 50, // İstenilen genişlikte
+          child: IconButton(
+            padding: EdgeInsets.zero, // Ikonun etrafındaki boşluğu kaldırın
+            icon: const Icon(Icons.arrow_back), // Geri dönme ikonu
+            onPressed: () {
+              Navigator.of(context).pop(); // Geri dönme işlevi
+            },
+          ),
+        ),
+      ),
       body: SafeArea(
         child: Column(
           children: [
-            Row(
-              children: [
-                Container(
-                  alignment: Alignment.topLeft,
-                  margin: const EdgeInsets.only(left: 20),
-                  width: 59,
-                  height: 59,
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(40),
-                    color: Colors.black26,
-                  ),
-                  child: buttonArrow(context),
-                ),
-              ],
-            ),
+
             Container(
               decoration:  const BoxDecoration(color: Colors.white70),
               width: double.infinity,

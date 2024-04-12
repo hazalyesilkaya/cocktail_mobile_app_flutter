@@ -4,7 +4,7 @@ class Diohelper {
   static List<ProductModel> getdata() {
     List<ProductModel> list = [];
     list.add(ProductModel(
-        id: 0,
+        id: 300,
         name: "Margarita",
         img: "assets/images/osvaldo.jpg",
         description:
@@ -13,7 +13,7 @@ class Diohelper {
         secondStep: "Margarita Step2",
         ingredient: "Ingredient1 Ingredient2 Ingredient3 Ingredient4"));
     list.add(ProductModel(
-        id: 1,
+        id: 301,
         name: "Alabama Slammer",
         img: "assets/images/isabella_mendes.jpg",
         description: "Description2",
@@ -21,7 +21,7 @@ class Diohelper {
         secondStep: "Alabama Slammer Step2",
         ingredient: "Ingredient1 Ingredient2 Ingredient3 Ingredient4"));
     list.add(ProductModel(
-        id: 2,
+        id: 302,
         name: "Alexander",
         img: "assets/images/martini_drink.jpg",
         description: "Description3",
@@ -29,7 +29,7 @@ class Diohelper {
         secondStep: "Alexander Step2",
         ingredient: "Ingredient1 Ingredient2 Ingredient3"));
     list.add(ProductModel(
-        id: 3,
+        id: 303,
         name: "Amaretto Sour",
         img: "assets/images/valeria.jpg",
         description: "Description4",
@@ -37,7 +37,7 @@ class Diohelper {
         secondStep: "Amaretto Step2",
         ingredient: "Ingredient1 Ingredient2 Ingredient3 Ingredient4"));
     list.add(ProductModel(
-        id: 4,
+        id: 304,
         name: "Americano",
         img: "assets/images/valeria.jpg",
         description: "Description5",
@@ -45,7 +45,7 @@ class Diohelper {
         secondStep: "Americano Step2",
         ingredient: "Ingredient1 Ingredient2 Ingredient3 Ingredient4"));
     list.add(ProductModel(
-        id: 5,
+        id: 305,
         name: "Americano",
         img: "assets/images/valeria.jpg",
         description: "Description5",
@@ -53,7 +53,7 @@ class Diohelper {
         secondStep: "Americano Step2",
         ingredient: "Ingredient1 Ingredient2 Ingredient3 Ingredient4"));
     list.add(ProductModel(
-        id: 6,
+        id: 306,
         name: "Americano",
         img: "assets/images/valeria.jpg",
         description: "Description5",
@@ -61,7 +61,7 @@ class Diohelper {
         secondStep: "Americano Step2",
         ingredient: "Ingredient1 Ingredient2 Ingredient3 Ingredient4"));
     list.add(ProductModel(
-        id: 7,
+        id: 307,
         name: "Americano",
         img: "assets/images/valeria.jpg",
         description: "Description5",

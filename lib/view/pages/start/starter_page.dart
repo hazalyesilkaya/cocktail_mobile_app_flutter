@@ -48,7 +48,7 @@ class StarterPageState extends State<StarterPage>
         child: Container(
           decoration: const BoxDecoration(
               image: DecorationImage(
-                  image: AssetImage('assets/images/starter.jpg'),
+                  image: AssetImage('assets/images/pages_img/starter.jpg'),
                   fit: BoxFit.fitHeight)),
           child: Container(
             decoration: BoxDecoration(

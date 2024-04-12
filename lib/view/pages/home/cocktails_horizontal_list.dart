@@ -46,6 +46,9 @@ class CocktailHorizontalList extends StatelessWidget {
         })
         .cast<String>()
         .toList();
+    List<int?> horizontalListId = horizontalList.map((item) {
+      return item.id;
+    }).toList();
     return horizontalListWidget(
         context: context,
         name: horizontalListNames,
@@ -53,6 +56,8 @@ class CocktailHorizontalList extends StatelessWidget {
         description: horizontalListDescription,
         firstStep: horizontalListFirstStep,
         secondStep: horizontalListSecondStep,
-        ingredient: horizontalListIngredients);
+        ingredient: horizontalListIngredients,
+    id: horizontalListId,
+    horizontalList: horizontalList);
   }
 }

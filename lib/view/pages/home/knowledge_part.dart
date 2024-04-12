@@ -25,6 +25,7 @@ class Knowledge extends StatelessWidget {
     return knowledgeItems(
       title: title,
       description: description,
+      knowledgeList: knowledgeList
     );
   }
 }

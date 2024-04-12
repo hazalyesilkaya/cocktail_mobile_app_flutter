@@ -5,8 +5,6 @@ import 'package:flutter/material.dart';
 import '../../../../resources/alcohols_data.dart';
 import '../../../../widgets/tab_bar_widget.dart';
 
-
-
 class Liqueur extends StatelessWidget {
   const Liqueur({
     super.key,
@@ -45,21 +43,25 @@ class Liqueur extends StatelessWidget {
         .toList();
     List<String> liqueurIngredients = liqueurList
         .map((item) {
-      return item.ingredient;
-    })
+          return item.ingredient;
+        })
         .cast<String>()
         .toList();
+    List<int?> liqueurId = liqueurList.map((item) {
+      return item.id;
+    }).toList();
     return Scaffold(
         body: SingleChildScrollView(
-          child: tabBarItem(
-              image: liqueurImages,
-              name: liqueurNames,
-              description: liqueurDescription,
-              firstStep: liqueurSteps,
-              secondStep: liqueurSecondStep,
-            ingredient: liqueurIngredients,
-            context: context
-          ),
-        ));
+      child: tabBarItem(
+          image: liqueurImages,
+          name: liqueurNames,
+          description: liqueurDescription,
+          firstStep: liqueurSteps,
+          secondStep: liqueurSecondStep,
+          ingredient: liqueurIngredients,
+          context: context,
+          id: liqueurId,
+          barList: liqueurList),
+    ));
   }
 }

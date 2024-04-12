@@ -4,7 +4,8 @@ import 'package:flutter_swiper_view/flutter_swiper_view.dart';
 import '../models/model.dart';
 import '../view/pages/detail_page/detail_page.dart';
 
-Widget horizontalListWidget({context, name, img, description, firstStep, secondStep, ingredient}) {
+Widget horizontalListWidget({context, name, img, description, firstStep, secondStep, ingredient, id,
+  horizontalList}) {
   return Padding(
     padding: const EdgeInsets.all(3.0),
     child: Column(
@@ -22,7 +23,7 @@ Widget horizontalListWidget({context, name, img, description, firstStep, secondS
           // Using ListView.builder
           child: Swiper(
             itemCount: name.length,
-            viewportFraction: 0.65,
+            viewportFraction: 0.7,
             scale: 0.55,
             //itemWidth: 100,
             //itemHeight: 190,
@@ -34,7 +35,7 @@ Widget horizontalListWidget({context, name, img, description, firstStep, secondS
                 child: Stack(
                   children: [
                     ClipRRect(
-                      borderRadius: BorderRadius.circular(28),
+                      borderRadius: BorderRadius.circular(25),
                       child: Material(
                         child: InkWell(
                           onTap: () {
@@ -48,6 +49,7 @@ Widget horizontalListWidget({context, name, img, description, firstStep, secondS
                                   firstStep: firstStep[index],
                                   secondStep: secondStep[index],
                                   ingredient: ingredient[index],
+                                  id: horizontalList[index].id
                                 )),
                               ),
                             );

@@ -127,19 +127,19 @@ class FavoritesState extends State<Favorites> {
                                         ),
                                       ),
                                       const SizedBox(
-                                        width: 16,
+                                        width: 10,
                                       ),
                                       Expanded(
                                         child: Container(
-                                          height: 72,
+                                          height: 85,
                                           alignment: Alignment.centerLeft,
                                           child: Padding(
-                                            padding: const EdgeInsets.all(4.0),
+                                            padding: const EdgeInsets.all(2.0),
                                             child: Column(
                                               crossAxisAlignment:
                                                   CrossAxisAlignment.start,
                                               mainAxisAlignment:
-                                                  MainAxisAlignment.spaceBetween,
+                                                  MainAxisAlignment.spaceAround,
                                               children: <Widget>[
                                                 Text(
                                                   element.name.toString(),

@@ -16,7 +16,6 @@ class HeadersState extends State<Headers> {
       alignment: Alignment.center,
       height: 33,
       width: MediaQuery.of(context).size.width,
-      margin: const EdgeInsets.only(right: 10),
       decoration: BoxDecoration(
        // borderRadius: BorderRadius.circular(10),
           boxShadow: [
@@ -25,22 +24,34 @@ class HeadersState extends State<Headers> {
               offset: const Offset(12, 5),
               blurRadius: 20,
             )
-          ]
+          ],
       ),
       child: Padding(
         padding: const EdgeInsets.only(left: 35, right: 35),
         child: ClipRRect(
-          borderRadius: BorderRadius.circular(10),
+          borderRadius: BorderRadius.circular(15),
           child: Container(
-            width: 155,
-            color: Colors.blueGrey[800],
+            width: MediaQuery.of(context).size.width*0.58,
+            decoration: BoxDecoration(
+              color: const Color.fromRGBO(250, 250, 250, 1.0),
+              gradient: LinearGradient(
+                begin: Alignment.centerLeft,
+                end: Alignment.centerRight,
+                colors: [
+                  Colors.grey.withOpacity(0.5), // Sol kenarın opak rengi
+                  Colors.transparent, // Merkezin şeffaf rengi
+                  Colors.grey.withOpacity(0.5), // Sağ kenarın opak rengi
+                ],
+              ),
+            ),
             child: Center(
               child: Text(
                 widget.title,
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   fontSize: 16,
-                  color: Colors.grey[200],
+                  // color: Colors.grey[200],
+                  color: Colors.grey[800],
                   fontWeight: FontWeight.bold,
                   fontFamily: "PetitFormal",
                 ),

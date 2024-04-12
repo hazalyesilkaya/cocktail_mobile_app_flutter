@@ -1,8 +1,14 @@
 import 'package:cocktail_app/animations/animation.dart';
 import 'package:cocktail_app/view/components/steps.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:cocktail_app/view/components/ingredients.dart';
+import 'package:hive/hive.dart';
+import 'package:path_provider/path_provider.dart' as path_provider;
+import 'package:provider/provider.dart';
 
+import '../../models/model.dart';
+import '../provider/app_provider.dart';
 
 scroll(name, description, firstStep, secondStep, drinkIngredients) {
   String ingredientItems = drinkIngredients;
@@ -41,17 +47,23 @@ scroll(name, description, firstStep, secondStep, drinkIngredients) {
                 ),
                 FadeAnimation(
                   0.3,
-                  Text(
-                    "$name",
-                    style: TextStyle(
-                        fontSize: 26,
-                        fontWeight: FontWeight.bold,
-                        color: Colors.blueGrey[900],
-                        fontFamily: "PetitFormal"),
-                    /*   style: Theme
-                        .of(context)
-                        .textTheme
-                        .displaySmall, */
+                  Row(
+                    children: [
+                      Expanded(
+                        child: Text(
+                          "$name",
+                          style: TextStyle(
+                              fontSize: 26,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.blueGrey[900],
+                              fontFamily: "PetitFormal"),
+                          /*   style: Theme
+                              .of(context)
+                              .textTheme
+                              .displaySmall, */
+                        ),
+                      ),
+                    ],
                   ),
                 ),
                 const SizedBox(
@@ -112,7 +124,8 @@ scroll(name, description, firstStep, secondStep, drinkIngredients) {
                   physics: const NeverScrollableScrollPhysics(),
                   shrinkWrap: true,
                   itemCount: items.length,
-                  itemBuilder: (context, index) => ingredients(context, index, items),
+                  itemBuilder: (context, index) =>
+                      ingredients(context, index, items),
                 ),
                 const Padding(
                   padding: EdgeInsets.symmetric(vertical: 15),

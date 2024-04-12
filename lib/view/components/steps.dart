@@ -12,7 +12,7 @@ steps(
     children: [
       stepsWidget(context: context, index: index, step: firstStep),
       stepsWidget(context: context, index: index + 1, step: secondStep),
-      const SizedBox(height: 15)
+      const SizedBox(height: 8)
     ],
   );
 }

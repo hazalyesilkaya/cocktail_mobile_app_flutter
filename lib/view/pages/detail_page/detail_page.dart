@@ -15,6 +15,7 @@ class DetailPage extends StatefulWidget {
 }
 
 class DetailPageState extends State<DetailPage> {
+  DateTime? lastClickTime;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -22,13 +23,14 @@ class DetailPageState extends State<DetailPage> {
         child: Stack(
           children: [
             detailPageImage(widget.model.img),
-            buttonArrow(context),
+            buttonArrow(context, widget.model),
             scroll(
                 widget.model.name,
                 widget.model.description,
                 widget.model.firstStep,
                 widget.model.secondStep,
-            widget.model.ingredient),
+                widget.model.ingredient,
+            ),
           ],
         ),
       ),

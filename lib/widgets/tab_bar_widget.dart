@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 import '../models/model.dart';
 import '../view/pages/detail_page/detail_page.dart';
 
-Widget tabBarItem({image, name, description, firstStep, secondStep, ingredient, context}) {
+Widget tabBarItem({image, name, description, firstStep, secondStep, ingredient, context, id, barList}) {
   double screenHeight = MediaQuery.of(context).size.height;
   // double gridViewHeight = screenHeight * 0.67;
   double mainAxisHeight = screenHeight * 0.021;
@@ -60,7 +60,8 @@ Widget tabBarItem({image, name, description, firstStep, secondStep, ingredient, 
                                               description: description[index],
                                               firstStep: firstStep[index],
                                               secondStep: secondStep[index],
-                                                  ingredient: ingredient[index]
+                                                  ingredient: ingredient[index],
+                                                  id:  barList[index].id,
                                             )),
                                           ));
                                     },

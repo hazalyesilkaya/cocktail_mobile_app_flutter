@@ -4,7 +4,6 @@ import 'package:flutter/material.dart';
 import '../../../../resources/alcohols_data.dart';
 import '../../../../widgets/tab_bar_widget.dart';
 
-
 class Wine extends StatelessWidget {
   const Wine({
     super.key,
@@ -43,21 +42,25 @@ class Wine extends StatelessWidget {
         .toList();
     List<String> wineIngredients = wineList
         .map((item) {
-      return item.ingredient;
-    })
+          return item.ingredient;
+        })
         .cast<String>()
         .toList();
+    List<int?> wineId = wineList.map((item) {
+      return item.id;
+    }).toList();
     return Scaffold(
         body: SingleChildScrollView(
-          child: tabBarItem(
-              image: wineImages,
-              name: wineNames,
-              description: wineDescription,
-              firstStep: wineFirstStep,
-              secondStep: wineSecondStep,
-            ingredient: wineIngredients,
-            context: context
-             ),
-        ));
+      child: tabBarItem(
+          image: wineImages,
+          name: wineNames,
+          description: wineDescription,
+          firstStep: wineFirstStep,
+          secondStep: wineSecondStep,
+          ingredient: wineIngredients,
+          context: context,
+          id: wineId,
+          barList: wineList),
+    ));
   }
 }

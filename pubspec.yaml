@@ -72,28 +72,77 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-    - assets/images/starter.jpg
+    - assets/images/pages_img/starter.jpg
+    - assets/images/pages_img/smoothies.jpg
+    - assets/images/pages_img/wine_gif.gif
+    - assets/images/pages_img/green_smoothies.jpg
+    - assets/images/pages_img/protein_smoothies.jpg
+    - assets/images/pages_img/yogurt_smoothies.jpg
+    - assets/images/pages_img/coffee_cocktails.jpg
+    - assets/images/pages_img/mokteyl.jpg
     - assets/images/isabella_mendes.jpg
     - assets/images/antonio_rose.jpg
     - assets/images/martini_drink.jpg
     - assets/images/osvaldo.jpg
     - assets/images/valeria.jpg
-    - assets/images/wine_gif.gif
-    - assets/images/header_img.png
-    - assets/images/alkolsuz_aperol.jpg
-    - assets/images/alkolsuz_karpuz.jpg
-    - assets/images/alkolsuz_mojito.jpg
-    - assets/images/alkolsuz_sindirella.jpg
-    - assets/images/karadut_lime.jpg
-    - assets/images/alkolsuz_margarita.jpg
-    - assets/images/virgin_mary.jpg
-    - assets/images/elma_kokteyl.jpg
-    - assets/images/greyfurt_kokteyl.jpg
-    - assets/images/mango_ananas.jpg
-    - assets/images/visne_soda.jpg
-    - assets/images/yaban_mersini_karpuz.jpg
-
-
+    - assets/images/mocktails_img/alkolsuz_aperol.jpg
+    - assets/images/mocktails_img/alkolsuz_karpuz.jpg
+    - assets/images/mocktails_img/alkolsuz_mojito.jpg
+    - assets/images/mocktails_img/alkolsuz_sindirella.jpg
+    - assets/images/mocktails_img/karadut_lime.jpg
+    - assets/images/mocktails_img/alkolsuz_margarita.jpg
+    - assets/images/mocktails_img/virgin_mary.jpg
+    - assets/images/mocktails_img/elma_kokteyl.jpg
+    - assets/images/mocktails_img/greyfurt_kokteyl.jpg
+    - assets/images/mocktails_img/mango_ananas.jpg
+    - assets/images/mocktails_img/visne_soda.jpg
+    - assets/images/mocktails_img/yaban_mersini_karpuz.jpg
+    - assets/images/home_horizontalList_img/moscow_mule.jpg
+    - assets/images/home_horizontalList_img/mai_tai.jpg
+    - assets/images/home_horizontalList_img/pina_colada.jpg
+    - assets/images/home_horizontalList_img/old_fashioned.jpg
+    - assets/images/smoothies_img/green_smoothies_img/ananas_greyfurt_smoothie.jpg
+    - assets/images/smoothies_img/green_smoothies_img/strawberry_banana.jpg
+    - assets/images/smoothies_img/green_smoothies_img/peanut_banana.jpg
+    - assets/images/smoothies_img/green_smoothies_img/mango_kale.jpg
+    - assets/images/smoothies_img/green_smoothies_img/tea_smoothie.jpg
+    - assets/images/smoothies_img/green_smoothies_img/ananas_ıspanak.jpg
+    - assets/images/smoothies_img/green_smoothies_img/kiwi_smoothie.jpg
+    - assets/images/smoothies_img/green_smoothies_img/rainbow_smoothie.jpg
+    - assets/images/smoothies_img/green_smoothies_img/lime_kale.jpg
+    - assets/images/smoothies_img/green_smoothies_img/green_vegie.jpg
+    - assets/images/smoothies_img/protein_smoothies_img/banana_almond_protein.jpg
+    - assets/images/smoothies_img/protein_smoothies_img/protein_power.jpg
+    - assets/images/smoothies_img/protein_smoothies_img/very_berry.jpg
+    - assets/images/smoothies_img/protein_smoothies_img/chocolate_banana_peanut.jpg
+    - assets/images/smoothies_img/protein_smoothies_img/strawberry_banana.jpg
+    - assets/images/smoothies_img/protein_smoothies_img/chocolate_cherry.jpg
+    - assets/images/smoothies_img/protein_smoothies_img/vanilla_pumpkin.jpg
+    - assets/images/smoothies_img/protein_smoothies_img/blueberry_breakfast.jpg
+    - assets/images/smoothies_img/protein_smoothies_img/green_monster.jpg
+    - assets/images/smoothies_img/protein_smoothies_img/peach_smoothie.jpg
+    - assets/images/smoothies_img/protein_smoothies_img/berry_blast_greens.jpg
+    - assets/images/smoothies_img/protein_smoothies_img/tropical_protein.jpg
+    - assets/images/smoothies_img/yogurt_smoothies_img/mango_yogurt.jpg
+    - assets/images/smoothies_img/yogurt_smoothies_img/watermelon_yogurt.jpg
+    - assets/images/smoothies_img/yogurt_smoothies_img/mango_lime_yogurt.jpg
+    - assets/images/smoothies_img/yogurt_smoothies_img/apple_banana_yogurt.jpg
+    - assets/images/smoothies_img/yogurt_smoothies_img/bircher_muesli.jpg
+    - assets/images/smoothies_img/yogurt_smoothies_img/banana_breakfast_yogurt.jpg
+    - assets/images/smoothies_img/yogurt_smoothies_img/berry_kefir_yogurt.jpg
+    - assets/images/smoothies_img/yogurt_smoothies_img/strawberry_peach_yogurt.jpg
+    - assets/images/smoothies_img/yogurt_smoothies_img/orange_yogurt.jpg
+    - assets/images/smoothies_img/yogurt_smoothies_img/chocolate_banana_yogurt.jpg
+    - assets/images/coffee_cocktails_img/espresso_martini_coffee.jpg
+    - assets/images/coffee_cocktails_img/irish_coffee.jpg
+    - assets/images/coffee_cocktails_img/irish_affogato_coffee.jpg
+    - assets/images/coffee_cocktails_img/white_russian_coffee.jpg
+    - assets/images/coffee_cocktails_img/black_russian_coffee.jpg
+    - assets/images/coffee_cocktails_img/coffee_martini.jpg
+    - assets/images/coffee_cocktails_img/carajillo_coffee.jpg
+    - assets/images/coffee_cocktails_img/tiramisu_white_russians_coffee.jpg
+    - assets/images/coffee_cocktails_img/mudslide_coffee.webp
+    -  assets/images/coffee_cocktails_img/cold_brew_sangria_coffee.jpg
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
 

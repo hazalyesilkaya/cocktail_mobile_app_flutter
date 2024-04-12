@@ -42,16 +42,21 @@ class AlcoholsBox extends StatelessWidget {
         .toList();
     List<String> alcoholsIngredients = homePageAlcoholBoxList
         .map((item) {
-      return item.ingredient;
-    })
+          return item.ingredient;
+        })
         .cast<String>()
         .toList();
+    List<int?> alcoholsId = homePageAlcoholBoxList.map((item) {
+      return item.id;
+    }).toList();
     return alcoholBox(
         name: alcoholsNames,
         img: alcoholsImages,
         description: alcoholsDescription,
         firstStep: alcoholsFirstStep,
         secondStep: alcoholsSecondStep,
-    ingredient: alcoholsIngredients,);
+        ingredient: alcoholsIngredients,
+        id: alcoholsId,
+        mocktailList: homePageAlcoholBoxList);
   }
 }

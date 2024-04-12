@@ -46,7 +46,7 @@ class MenuState extends State<Menu> {
                 borderRadius: BorderRadius.circular(20),
               ),
               child: const Image(
-                image: AssetImage("assets/images/wine_gif.gif"),
+                image: AssetImage("assets/images/pages_img/wine_gif.gif"),
                 fit: BoxFit.cover,
               )),
         ],
