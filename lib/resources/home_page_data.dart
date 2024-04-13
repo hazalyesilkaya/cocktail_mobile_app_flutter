@@ -10,7 +10,7 @@ List<ProductModel> horizontalList = [
       secondStep: "Votka ve zencefilli gazozu ekleyin. Kırık buzlarımızı bardağımıza tepeleme şekilde ekleyebilirsiniz ve son olarak sodamızı ekleyebiliriz.",
       ingredient: "60 ml Votka,½ Lime,40 ml zencefilli gazoz,50 ml Soda"),
   ProductModel(
-       id: 101,
+      id: 101,
       name: "Mai Tai",
       img: "assets/images/home_horizontalList_img/mai_tai.jpg",
       description: "Alkollü içecek - Rom",
@@ -77,7 +77,7 @@ List<ProductModel> homePageAlcoholBoxList = [
           "limonlu gazoz"),
   ProductModel(
      id: 153,
-      name: "Mojito",
+      name: "Alkolsüz Mojito",
       img: "assets/images/mocktails_img/alkolsuz_mojito.jpg",
       description: "Alkolsüz içecek",
       firstStep: "Limonu parçalara bölün. 2 parça limonu iri şekilde doğrayın. "

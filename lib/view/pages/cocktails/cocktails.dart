@@ -99,7 +99,7 @@ class CocktailsState extends State<Cocktails>
                       ),
                       Expanded(
                         child: Container(
-                          height: 72,
+                          height: 80,
                           alignment: Alignment.centerLeft,
                           child: Padding(
                             padding: const EdgeInsets.all(4.0),

@@ -142,7 +142,28 @@ flutter:
     - assets/images/coffee_cocktails_img/carajillo_coffee.jpg
     - assets/images/coffee_cocktails_img/tiramisu_white_russians_coffee.jpg
     - assets/images/coffee_cocktails_img/mudslide_coffee.webp
-    -  assets/images/coffee_cocktails_img/cold_brew_sangria_coffee.jpg
+    - assets/images/coffee_cocktails_img/cold_brew_sangria_coffee.jpg
+    - assets/images/all_cocktails_img/peach_bellini_cocktails.jpg
+    - assets/images/all_cocktails_img/ranch_water_cocktails.jpg
+    - assets/images/all_cocktails_img/bees_knees_cocktails.jpg
+    - assets/images/all_cocktails_img/dark_stormy_cocktails.jpg
+    - assets/images/all_cocktails_img/red_sangria_cocktails.jpg
+    - assets/images/all_cocktails_img/classic_margarita_cocktails.jpg
+    - assets/images/all_cocktails_img/white_spritzer_cocktails.jpg
+    - assets/images/all_cocktails_img/tom_collins_cocktails.jpg
+    - assets/images/all_cocktails_img/classic_mojito_cocktails.jpg
+    - assets/images/all_cocktails_img/negroni_cocktails.jpg
+    - assets/images/all_cocktails_img/paloma_cocktails.jpg
+    - assets/images/all_cocktails_img/sidecar_cocktails.jpg
+    - assets/images/all_cocktails_img/classic_bloody_mary_cocktails.jpg
+    - assets/images/all_cocktails_img/strawberry_daiquiri_cocktails.jpg
+    - assets/images/all_cocktails_img/french_seventy_five_cocktails.jpg
+    - assets/images/all_cocktails_img/mint_julep_cocktails.jpg
+    - assets/images/all_cocktails_img/strawberry_margaritas_cocktails.jpg
+    - assets/images/all_cocktails_img/watermelon_sangria_cocktails.jpg
+    - assets/images/all_cocktails_img/strawberry_sangria_cocktails.jpg
+    - assets/images/all_cocktails_img/mulled_cider_cocktails.jpg
+    - assets/images/all_cocktails_img/pomegranate_sparklers.jpg
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
 
